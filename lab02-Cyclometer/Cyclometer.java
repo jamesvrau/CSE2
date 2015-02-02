@@ -28,6 +28,7 @@ public class Cyclometer {
             
     //run the calculations; store the values. 
     
+    
         //distance in inches 
         distanceTrip1=countsTrip1*wheelDiameter*PI;
         //For each count, a rotation of the hweel travels the diameter in inches times Pi
