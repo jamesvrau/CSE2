@@ -60,26 +60,27 @@
     
 // Display all values in correct order
 
+
      System.out.println("               "); //space between display for neatness 
     
         //Display item, quantity, and price
-     System.out.println("Socks     " + nSocks +   " items,  each $" + sockCost$); 
+     System.out.println("Socks     " + nSocks +   " items,  each $" +  sockCost$); 
      System.out.println("Glasses   " + nGlasses + " items,  each $" + glassCost$);
      System.out.println("Envelopes " +nEnvelopes+ " items,  each $" + envelopeCost$);
      
      System.out.println("               ");
      
         //Display total item amount, and its sales tax
-     System.out.println("Socks Total      $" + totalSockCost$ +   ",    Sales tax  $" + taxSocks$);
-     System.out.println("Glasses Total    $" + totalGlassCost$ +  ",   Sales tax  $" + taxGlasses$);
-     System.out.println("Envelopes Total  $" + totalEnvelopeCost$+",    Sales tax  $" + taxEnvelopes$);
+     System.out.printf("Socks Total      $" + totalSockCost$ +   ",    Sales tax  $" + "%.2f\n" ,taxSocks$);
+     System.out.printf("Glasses Total    $" + totalGlassCost$ +  ",   Sales tax  $" + "%.2f\n" ,taxGlasses$);
+     System.out.printf("Envelopes Total  $" + totalEnvelopeCost$+",    Sales tax  $" + "%.2f\n",taxEnvelopes$);
      
        System.out.println("               ");
      
         //Display totals before tax, sales tax, and total purchase price
      System.out.println("Total Excluding Tax   $" + totalCostBeforeTax);
-     System.out.println("Total Sales Tax       $" + totalSalesTax);
-     System.out.println("Total Purchase Price  $" + totalCostAfterTax);
+     System.out.printf("Total Sales Tax       $" + "%.2f\n" ,totalSalesTax);
+     System.out.printf("Total Purchase Price  $" + "%.2f\n" ,totalCostAfterTax);
      
      //close main method
      
