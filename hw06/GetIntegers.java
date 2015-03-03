@@ -14,22 +14,28 @@ System.out.println( "Please enter 5 non-negative integers: " );
 for(int i=1; i<6; i++){
     
     Scanner in = new Scanner( System.in ); // create a Scanner for variable 'input'
-    intCheck = in.nextInt(); //checks integer value
+    if(in.hasNextInt()){ 
+        intCheck = in.nextInt(); //checks integer value
     
+        
         if (intCheck > 0){
         sum = sum + intCheck; 
         }
         
-        
         else{ System.out.println( " Invalid input, enter again " );
         i--; //redo input, take away 1 count value
         }
+        
+    }//close for checking if input is int.
+    
+    else{ System.out.println( " Invalid input, enter again " );
+    i--;
+    }
     
 } //close for loop
 
 System.out.println( " Sum is " + sum );
  
-
 
 } //close main 
 } //close class
