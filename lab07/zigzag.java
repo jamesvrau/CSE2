@@ -1,19 +1,12 @@
-while(true) {
-
-Scanner in = new Scanner( System.in ); // 'in' = value entered
-System.out.print("Enter Y or y to do it again: ");
-}
-break;
-
-//this has to be done somewhere?!^^
-
-
 //James Rau, CSE 002, 19/03/2015
 //Program for printing *'s in a specefic order
 import java.util.Scanner; // import scanner class
 
 public class zigzag { // add class and main method respectively 
 public static void main (String [ ] args) {
+  
+while(true) {
+
   
 Scanner in = new Scanner( System.in ); // 'in' = value entered
 System.out.print( "Please enter an integer between 3-33: " );  //range is inclusive 
@@ -67,6 +60,21 @@ while(counter<=nStars){
   
 } //close to if statement - integer check
 else { System.out.print("Enter an integer "); } 
+
+System.out.println("Enter Y or y to do it again: ");
+
+String ans = in.next(); //promt input and assign to ans
+
+if (ans.equals("Y") || ans.equals("y")){
+    continue;
+}
+
+else{ 
+    break;}
     
+}//close to infinite loop
+
+
+
 } //close class
 } //close main string
